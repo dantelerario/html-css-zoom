@@ -80,7 +80,7 @@ font-size: 16px;
 }
 
 #main-content .user .user-name,
-#main-window .user i {
+#main-content i {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -92,9 +92,13 @@ font-size: 16px;
   opacity: 0;
 }
 
-#main-window .user.active .user-name,
-#main-window .user:not(.active) i {
-  opacity: 0;
+#main-content .user.active .user-name {
+  opacity: 1;
+}
+
+#main-content .user.active .user-name,
+#main-content .user:not(.active) i {
+  opacity: 1;
 }
 
 /* BOTTOM-ROW */
