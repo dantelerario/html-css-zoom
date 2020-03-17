@@ -1,0 +1,79 @@
+/* GENERAL SETTING */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+background: #000;
+color: #fff;
+font-size: 16px;
+}
+
+/* UTILITIES */
+
+.text-center {
+  text-align: center;
+}
+
+/* APP */
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+
+/* TOP ROW */
+
+#top-row {
+  padding: 15px;
+  width: 100%;
+}
+
+.top-span:after {
+  content: '';
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: middle;
+  border: 4px solid transparent;
+  border-top-color: #fff;
+}
+
+/* MAIN CONTENT */
+
+#main-content {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1600px;
+  max-width: 100%;
+}
+
+#main-content .user {
+  position: relative;
+  flex-basis: 25%;
+  background: #555;
+  border: 3px solid #000;
+}
+
+#main-content .user img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BOTTOM-ROW */
+
+#bottom-row {
+  padding: 15px;
+  width: 100%;
+}
